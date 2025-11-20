@@ -1,0 +1,50 @@
+deporte,total_femenino,total_masculino,total,ratio,porcentaje_femenino,tendencia_femenino,tendencia_masculino
+FÜTBOL,8944,79975,88919,0.11,10.1,creciente,creciente
+BALONCESTO,22957,11337,34294,2.02,66.9,creciente,creciente
+BALONMANO,8081,6281,14362,1.29,56.3,creciente,creciente
+ATLETISMO,6817,6252,13069,1.09,52.2,creciente,decreciente
+GIMNASIA,10285,326,10611,31.55,96.9,decreciente,creciente
+PATINAJE,5086,3013,8099,1.69,62.8,creciente,creciente
+PELOTA MANO,1486,6457,7943,0.23,18.7,creciente,creciente
+NATACIÜN,4014,3811,7825,1.05,51.3,decreciente,decreciente
+MULTIDEPORTE,2718,4295,7013,0.63,38.8,decreciente,decreciente
+AJEDREZ,1117,5479,6596,0.2,16.9,decreciente,creciente
+HERRI KIROLAK,2514,2746,5260,0.92,47.8,creciente,creciente
+VOLEIBOL,3910,866,4776,4.52,81.9,creciente,creciente
+TAEKWONDO,1700,2435,4135,0.7,41.1,decreciente,decreciente
+MONTAÜA,1926,2169,4095,0.89,47.0,estable,estable
+CICLISMO,757,3180,3937,0.24,19.2,creciente,creciente
+TENIS,1331,2427,3758,0.55,35.4,decreciente,decreciente
+KARATE,1436,2076,3512,0.69,40.9,creciente,decreciente
+DEPORTES DE INVIERNO,2002,1368,3370,1.46,59.4,creciente,creciente
+RUGBY,423,2685,3108,0.16,13.6,decreciente,decreciente
+SURF,1465,1407,2872,1.04,51.0,creciente,creciente
+PÜDEL,1110,1608,2718,0.69,40.8,creciente,creciente
+JUDO,709,1438,2147,0.49,33.0,creciente,creciente
+HOCKEY,925,1170,2095,0.79,44.2,creciente,creciente
+HÜPICA,1332,482,1814,2.76,73.4,creciente,creciente
+REMO,695,989,1684,0.7,41.3,creciente,decreciente
+JUEGOS Y DEPORTES VASCOS,774,791,1565,0.98,49.5,estable,estable
+TXIKIBOX,475,977,1452,0.49,32.7,creciente,creciente
+TENIS DE MESA,159,888,1047,0.18,15.2,creciente,creciente
+ESCALADA DEPORTIVA,505,503,1008,1.0,50.1,creciente,creciente
+GOLF,383,544,927,0.7,41.3,creciente,creciente
+MONTAÜA - SALIDAS DE MONTAÜA,385,420,805,0.92,47.8,estable,estable
+TRIATLÜN,364,416,780,0.88,46.7,creciente,creciente
+TIRO CON ARCO,296,464,760,0.64,38.9,creciente,creciente
+PIRAGÜISMO,386,343,729,1.13,52.9,creciente,creciente
+VELA,325,355,680,0.92,47.8,creciente,creciente
+PESCA,158,380,538,0.42,29.4,creciente,creciente
+DEPORTE ADAPTADO,128,371,499,0.35,25.7,creciente,creciente
+ACTIVIDADES SUBACUÜTICAS,215,210,425,1.02,50.6,creciente,creciente
+MONTAÜA. ORIENTACION,171,198,369,0.86,46.3,creciente,creciente
+ESGRIMA,119,211,330,0.56,36.1,decreciente,decreciente
+MONTAÜA - ESTANCIA GORBEA/IZARRAITZ,180,147,327,1.22,55.0,estable,estable
+BÉISBOL,59,186,245,0.32,24.1,decreciente,decreciente
+LUCHA,58,150,208,0.39,27.9,creciente,creciente
+ORIENTACIÜN,57,58,115,0.98,49.6,estable,estable
+MONTAÜA - TALLER DE ORIENTACIÜN,57,49,106,1.16,53.8,estable,estable
+MONTAÜA - ESTANCIA ESQUÜ TRAVESÜA,11,30,41,0.37,26.8,estable,estable
+MONTAÜA - ESTANCIA ESPELEOLOGÜA,6,15,21,0.4,28.6,estable,estable
+DEPORTES AÜREOS,7,9,16,0.78,43.8,estable,estable
+MONTAÜA - TALLER DE MARCHA NÜRDICA,7,3,10,2.33,70.0,estable,estable
