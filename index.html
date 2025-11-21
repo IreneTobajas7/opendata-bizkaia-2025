@@ -672,14 +672,11 @@
     <section class="story-block" aria-labelledby="embudo-oferta">
       <h2 id="embudo-oferta">El embudo de la oferta: cuando la base se estrecha</h2>
       <p>La oferta competitiva 2024-2025 revela el embudo en números: mientras que en primaria (benjamín, alevín, infantil) hay entre 62 y 64 actividades disponibles, la oferta se reduce a 45 en cadete y se desploma a solo 5 actividades en juvenil. Este estrechamiento afecta especialmente a las chicas, que encuentran menos opciones cuando más necesitan continuidad para mantener su práctica deportiva.</p>
-      <div class="highlight-box">
-        <strong>La oferta por categoría (competición 2024-2025):</strong>
-        <ul style="margin-top: 0.5rem; padding-left: 1.2rem;">
-          <li><strong>Primaria (base):</strong> Benjamín 64 actividades, Alevín 62, Infantil 62</li>
-          <li><strong>Cadete:</strong> 45 actividades (-28% respecto a primaria)</li>
-          <li><strong>Juvenil:</strong> 5 actividades (-92% respecto a primaria)</li>
-        </ul>
-        <p style="margin-top: 0.8rem; margin-bottom: 0;">Esta reducción drástica en la oferta juvenil explica en parte por qué la cuota femenina cae al 38,9% a los 17 años: cuando desaparecen las opciones, las chicas abandonan más que los chicos porque encuentran menos alternativas adaptadas a sus preferencias y menos espacios donde se sienten cómodas compitiendo.</p>
+      <div class="chart-wrapper" role="figure" aria-labelledby="chart-oferta-categoria">
+        <h3 id="chart-oferta-categoria">La oferta por categoría (competición 2024-2025)</h3>
+        <canvas id="ofertaCategoriaChart" height="200" aria-describedby="oferta-annotation"></canvas>
+        <p id="oferta-annotation" class="chart-annotation">El embudo es evidente: mientras que en primaria hay entre 62 y 64 actividades por categoría, la oferta cae a 45 en cadete y se desploma a solo 5 en juvenil. Esta reducción drástica explica en parte por qué la cuota femenina cae al 38,9% a los 17 años: cuando desaparecen las opciones, las chicas abandonan más que los chicos porque encuentran menos alternativas adaptadas a sus preferencias y menos espacios donde se sienten cómodas compitiendo.</p>
+        <p class="chart-footnote"><em>Fuente: catálogo de actividades de competición 2024-2025 (Open Data Bizkaia).</em></p>
       </div>
     </section>
 
@@ -1283,6 +1280,80 @@
             }
           },
           plugins: [parityBulletPlugin]
+        });
+      }
+
+      // Gráfico de oferta por categoría
+      const ofertaCategoriaCtx = document.getElementById('ofertaCategoriaChart');
+      if (ofertaCategoriaCtx) {
+        new Chart(ofertaCategoriaCtx, {
+          type: 'bar',
+          data: {
+            labels: ['Benjamín', 'Alevín', 'Infantil', 'Cadete', 'Juvenil'],
+            datasets: [{
+              label: 'Número de actividades',
+              data: [64, 62, 62, 45, 5],
+              backgroundColor: [
+                'rgba(0, 83, 76, 0.7)',
+                'rgba(0, 83, 76, 0.7)',
+                'rgba(0, 83, 76, 0.7)',
+                'rgba(201, 106, 18, 0.7)',
+                'rgba(201, 106, 18, 0.9)'
+              ],
+              borderRadius: 4
+            }]
+          },
+          options: {
+            indexAxis: 'y',
+            responsive: true,
+            plugins: {
+              legend: { display: false },
+              datalabels: {
+                color: '#1c1c1c',
+                backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                borderRadius: 4,
+                padding: 4,
+                align: 'end',
+                anchor: 'end',
+                formatter: (value) => value
+              },
+              tooltip: {
+                callbacks: {
+                  label: (context) => `${context.parsed.x} actividades`
+                }
+              }
+            },
+            scales: {
+              x: {
+                beginAtZero: true,
+                max: 70,
+                ticks: {
+                  display: false
+                },
+                grid: {
+                  color: 'rgba(28, 28, 28, 0.1)'
+                },
+                title: {
+                  display: true,
+                  text: 'Número de actividades competitivas',
+                  color: '#1c1c1c',
+                  font: {
+                    weight: '600'
+                  }
+                }
+              },
+              y: {
+                grid: {
+                  display: false
+                },
+                ticks: {
+                  font: {
+                    size: 12
+                  }
+                }
+              }
+            }
+          }
         });
       }
 
