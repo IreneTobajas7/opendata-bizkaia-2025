@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Ignorar todo excepto las carpetas reportaje y representación
+*
+
+# Incluir carpetas principales
+!reportaje/
+!representación/
+!.gitignore
+!README.md

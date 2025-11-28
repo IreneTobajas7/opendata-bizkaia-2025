@@ -1,0 +1,71 @@
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+script_tmp.js
+
+# PDFs and other docs (except README)
+*.pdf
+!README*.pdf
+
+# Workspace files
+*.code-workspace
+
+# Data analysis files (keep only CSV data and required JSON)
+analisis_*.py
+analisis_*.json
+analisis_*.txt
+datos_*.json
+boxplot-*.json
+resumen_*.json
+!data/resumen_deportes.json
+!data/evolucion_temporal.json
+
+# CodexFolder
+CodexFolder/
+
+# Data files - solo mantener los necesarios para el dashboard
+data/*
+!data/evolucion_por_deporte.csv
+!data/actividades-competicion-2024-2025.csv
+!data/evolucion_temporal.json
+!data/resumen_deportes.json
+
+# Documentación y archivos temporales
+INSTRUCCIONES.md
+datos_visualizacion.js
+*.xlsx
+*.gsheet
+*.png
+*.pdf
+!README.md
+!DEPLOY.md
+
