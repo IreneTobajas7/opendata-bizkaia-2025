@@ -1,20 +1,7 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
   "headers": [
     {
-      "source": "/data/(.*)",
+      "source": "/data/(.*\\.csv)",
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
@@ -23,6 +10,19 @@
         {
           "key": "Content-Type",
           "value": "text/csv; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "source": "/data/(.*\\.json)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
         }
       ]
     }
