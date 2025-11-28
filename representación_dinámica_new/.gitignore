@@ -52,3 +52,20 @@ resumen_*.json
 # CodexFolder
 CodexFolder/
 
+# Data files - solo mantener los necesarios para el dashboard
+data/*
+!data/evolucion_por_deporte.csv
+!data/actividades-competicion-2024-2025.csv
+!data/evolucion_temporal.json
+!data/resumen_deportes.json
+
+# Documentación y archivos temporales
+INSTRUCCIONES.md
+datos_visualizacion.js
+*.xlsx
+*.gsheet
+*.png
+*.pdf
+!README.md
+!DEPLOY.md
+

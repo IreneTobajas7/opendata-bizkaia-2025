@@ -1,0 +1,15 @@
+# Ignorar todo excepto representación_dinámica_new y este archivo
+*
+!.gitignore
+
+# Pero incluir representación_dinámica_new
+!representación_dinámica_new/
+!representación_dinámica_new/**
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
