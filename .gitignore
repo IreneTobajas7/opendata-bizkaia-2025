@@ -5,11 +5,10 @@
 .Spotlight-V100
 .Trashes
 
-# Ignorar todo excepto las carpetas reportaje y representación
-*
-
-# Incluir carpetas principales
+# Incluir carpetas principales y sus contenidos
 !reportaje/
+!reportaje/**
 !representación/
+!representación/**
 !.gitignore
 !README.md
